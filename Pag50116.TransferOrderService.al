@@ -4,7 +4,7 @@ page 50116 "Transfer Order Service"
     Caption = 'Transfer Order Service';
     APIPublisher = 'EthanSorenson';
     APIGroup = 'groupName';
-    APIVersion = 'v1.0';
+    APIVersion = 'v2.0';
     EntityName = 'TransferOrderService';
     EntitySetName = 'TransferOrderService';
     SourceTable = "Transfer Header";
@@ -16,152 +16,152 @@ page 50116 "Transfer Order Service"
         {
             group(General)
             {
-                field("No"; "No.")
+                field("No"; Rec."No.")
                 {
                 }
-                field("TransferFromCode"; "Transfer-from Code")
+                field("TransferFromCode"; Rec."Transfer-from Code")
                 {
                 }
-                field("TransferToCode"; "Transfer-to Code")
+                field("TransferToCode"; Rec."Transfer-to Code")
                 {
                 }
-                field("DirectTransfer"; "Direct Transfer")
+                field("DirectTransfer"; Rec."Direct Transfer")
                 {
                 }
-                field("InTransitCode"; "In-Transit Code")
+                field("InTransitCode"; Rec."In-Transit Code")
                 {
                 }
-                field("PostingDate"; "Posting Date")
+                field("PostingDate"; Rec."Posting Date")
                 {
                 }
-                field("ShortcutDimension1Code"; "Shortcut Dimension 1 Code")
+                field("ShortcutDimension1Code"; Rec."Shortcut Dimension 1 Code")
                 {
                 }
-                field("ShortcutDimension2Code"; "Shortcut Dimension 2 Code")
+                field("ShortcutDimension2Code"; Rec."Shortcut Dimension 2 Code")
                 {
                 }
-                field("AssignedUserID"; "Assigned User ID")
+                field("AssignedUserID"; Rec."Assigned User ID")
                 {
                 }
-                field(Status; Status)
+                field(Status; Rec.Status)
                 {
                 }
             }
 
             group(Shipment)
             {
-                field("ShipmentDate"; "Shipment Date")
+                field("ShipmentDate"; Rec."Shipment Date")
                 {
                 }
-                field("OutboundWhseHandlingTime"; "Outbound Whse. Handling Time")
+                field("OutboundWhseHandlingTime"; Rec."Outbound Whse. Handling Time")
                 {
                 }
-                field("ShipmentMethodCode"; "Shipment Method Code")
+                field("ShipmentMethodCode"; Rec."Shipment Method Code")
                 {
                 }
-                field("ShippingAgentCode"; "Shipping Agent Code")
+                field("ShippingAgentCode"; Rec."Shipping Agent Code")
                 {
                 }
-                field("ShippingAgentServiceCode"; "Shipping Agent Service Code")
+                field("ShippingAgentServiceCode"; Rec."Shipping Agent Service Code")
                 {
                 }
-                field("ShippingTime"; "Shipping Time")
+                field("ShippingTime"; Rec."Shipping Time")
                 {
                 }
-                field("ShippingAdvice"; "Shipping Advice")
+                field("ShippingAdvice"; Rec."Shipping Advice")
                 {
                 }
-                field("ReceiptDate"; "Receipt Date")
+                field("ReceiptDate"; Rec."Receipt Date")
                 {
                 }
             }
             group("Transfer-from")
             {
-                field("TransferFromName"; "Transfer-from Name")
+                field("TransferFromName"; Rec."Transfer-from Name")
                 {
                 }
-                field("TransferFromName2"; "Transfer-from Name 2")
+                field("TransferFromName2"; Rec."Transfer-from Name 2")
                 {
                 }
-                field("TransferFromAddress"; "Transfer-from Address")
+                field("TransferFromAddress"; Rec."Transfer-from Address")
                 {
                 }
-                field("TransferFromAddress2"; "Transfer-from Address 2")
+                field("TransferFromAddress2"; Rec."Transfer-from Address 2")
                 {
                 }
-                field("TransferFromCity"; "Transfer-from City")
+                field("TransferFromCity"; Rec."Transfer-from City")
                 {
                 }
                 group(Control17)
                 {
-                    field("TransferFromCounty"; "Transfer-from County")
+                    field("TransferFromCounty"; Rec."Transfer-from County")
                     {
                     }
                 }
-                field("TransferFromPostCode"; "Transfer-from Post Code")
+                field("TransferFromPostCode"; Rec."Transfer-from Post Code")
                 {
                 }
-                field("TrsfFromCountryRegionCode"; "Trsf.-from Country/Region Code")
+                field("TrsfFromCountryRegionCode"; Rec."Trsf.-from Country/Region Code")
                 {
                 }
-                field("TransferFromContact"; "Transfer-from Contact")
+                field("TransferFromContact"; Rec."Transfer-from Contact")
                 {
                 }
             }
             group("Transfer-to")
             {
-                field("TransferToName"; "Transfer-to Name")
+                field("TransferToName"; Rec."Transfer-to Name")
                 {
                 }
-                field("TransferToName2"; "Transfer-to Name 2")
+                field("TransferToName2"; Rec."Transfer-to Name 2")
                 {
                 }
-                field("TransferToAddress"; "Transfer-to Address")
+                field("TransferToAddress"; Rec."Transfer-to Address")
                 {
                 }
-                field("TransferToAddress2"; "Transfer-to Address 2")
+                field("TransferToAddress2"; Rec."Transfer-to Address 2")
                 {
                 }
-                field("TransferToCity"; "Transfer-to City")
+                field("TransferToCity"; Rec."Transfer-to City")
                 {
                 }
                 group(Control24)
                 {
-                    field("TransferToCounty"; "Transfer-to County")
+                    field("TransferToCounty"; Rec."Transfer-to County")
                     {
                     }
                 }
-                field("TransferToPostCode"; "Transfer-to Post Code")
+                field("TransferToPostCode"; Rec."Transfer-to Post Code")
                 {
                 }
-                field("TrsfToCountryRegionCode"; "Trsf.-to Country/Region Code")
+                field("TrsfToCountryRegionCode"; Rec."Trsf.-to Country/Region Code")
                 {
                 }
-                field("TransferToContact"; "Transfer-to Contact")
+                field("TransferToContact"; Rec."Transfer-to Contact")
                 {
                 }
             }
             group(Control19)
             {
-                field("InboundWhseHandlingTime"; "Inbound Whse. Handling Time")
+                field("InboundWhseHandlingTime"; Rec."Inbound Whse. Handling Time")
                 {
                 }
             }
             group("Foreign Trade")
             {
-                field("TransactionType"; "Transaction Type")
+                field("TransactionType"; Rec."Transaction Type")
                 {
                 }
-                field("TransactionSpecification"; "Transaction Specification")
+                field("TransactionSpecification"; Rec."Transaction Specification")
                 {
                 }
-                field("TransportMethod"; "Transport Method")
+                field("TransportMethod"; Rec."Transport Method")
                 {
                 }
-                field("Area"; Area)
+                field("Area"; Rec.Area)
                 {
                 }
-                field("EntryExitPoint"; "Entry/Exit Point")
+                field("EntryExitPoint"; Rec."Entry/Exit Point")
                 {
                 }
                 part(TransferLines; "Transfer Order Subform")
@@ -173,6 +173,4 @@ page 50116 "Transfer Order Service"
             }
         }
     }
-    var
-        test: page 5740;
 }

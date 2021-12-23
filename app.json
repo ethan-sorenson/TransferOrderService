@@ -2,13 +2,13 @@
   "id": "6df1e088-7363-4ab2-8640-7e818932cb31",
   "name": "TransferOrderService",
   "publisher": "EthanSorenson",
-  "version": "1.0.0.2",
-  "brief": "",
+  "version": "1.0.0.3",
+  "brief": "Simplified Transfer Order Web Service",
   "description": "",
   "privacyStatement": "",
   "EULA": "",
-  "help": "",
-  "url": "",
+  "help": "https://github.com/ethan-sorenson/TransferOrderService/issues",
+  "url": "https://github.com/ethan-sorenson/TransferOrderService",
   "logo": "",
   "dependencies": [],
   "screenshots": [],
@@ -21,6 +21,10 @@
     }
   ],
   "contextSensitiveHelpUrl": "https://TransferOrderService.com/help/",
-  "showMyCode": true,
-  "runtime": "3.2"
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "8.0"
 }
